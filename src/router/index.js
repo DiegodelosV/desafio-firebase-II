@@ -32,7 +32,7 @@ router.beforeEach((to, from, next) => { //"guardian beforeEach" para el acceso s
   const user = auth.currentUser;
   
   if (to.meta.requiresAuth && !user) {
-    next({ name: "login" });
+    next({ name: "signup" });
   } else {
     next();
   }

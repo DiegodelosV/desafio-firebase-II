@@ -8,7 +8,6 @@
 
 <script>
 import NavbarView from "./components/NavbarView.vue";
-
 export default {
   data() {
     return {};
@@ -17,4 +16,5 @@ export default {
     NavbarView,
   },
 };
+
 </script>

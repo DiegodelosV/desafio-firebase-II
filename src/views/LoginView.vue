@@ -4,6 +4,7 @@
     <input type="email" placeholder="Correo Electronico" v-model="email" />
     <input type="password" placeholder="Contraseña" v-model="password" />
     <button type="submit">Iniciar Sesion</button>
+    <router-link to="/signup">Registrarse</router-link>
   </form>
 </template>
 

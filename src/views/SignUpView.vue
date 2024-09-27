@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="register">
     <h1>Registro</h1>
-    <input type="text" placeholder="Correo Electronico" v-model="email" />
+    <input type="email" placeholder="Correo Electronico" v-model="email" />
     <input type="password" placeholder="Contraseña" v-model="password" />
     <button type="submit">Registrarse</button>
   </form>

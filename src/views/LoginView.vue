@@ -25,6 +25,10 @@ export default {
         const redirectpath = this.$route.query.redirect || "/"; // constante de ruta de redireccion
 
         this.$router.push(redirectpath);//redireccionar a la ruta correspondiente
+
+        //limpiar campos de formulario
+        this.email = "";
+        this.password = "";
       } catch (error) {
         console.log("error al iniciar sesion", error.message);
       }

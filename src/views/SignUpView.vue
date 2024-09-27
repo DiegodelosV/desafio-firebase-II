@@ -24,7 +24,16 @@ export default {
           this.email,
           this.password
         );
-        console.log(userCredential, "usuario creado exitosamente");
+        console.log("usuario creado exitosamente", userCredential);
+        
+        //limpiar campos de formulario
+        this.email = "";
+        this.password = "";
+
+        //rediccionamiento
+        this.$router.push("/");
+
+        
       } catch (error) {
         console.log(error.code, error.message);
       }

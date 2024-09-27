@@ -5,6 +5,8 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 
+import  firebaseApp  from "./firebaseConfig.js";
+
 const auth = getAuth(firebaseApp);
 
 export {

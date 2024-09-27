@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { createUserWithEmailAndPassword } from "../auth.js";
+import { auth, createUserWithEmailAndPassword } from "../auth.js";
 export default {
   data() {
     return {
@@ -20,6 +20,7 @@ export default {
     async register() {
       try {
         const userCredential = await createUserWithEmailAndPassword(
+          auth,
           this.email,
           this.password
         );

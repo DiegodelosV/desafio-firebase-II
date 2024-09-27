@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { signInWithEmailAndPassword } from "../auth.js";
+import {auth, signInWithEmailAndPassword } from "../auth.js";
 
 export default {
   data() {
@@ -20,7 +20,7 @@ export default {
   methods: {
     async login() {
       try {
-        await signInWithEmailAndPassword(this.email, this.password);
+        await signInWithEmailAndPassword(auth,this.email, this.password);
       } catch (error) {
         console.log("error al iniciar sesion", error.message);
       }

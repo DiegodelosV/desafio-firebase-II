@@ -3,7 +3,7 @@
     <h1>Registro</h1>
     <input type="email" placeholder="Correo Electronico" v-model="email" />
     <input type="password" placeholder="Contraseña" v-model="password" />
-    <button type="submit">Registrarse</button>
+    <button class="btn-register" type="submit">Registrarse</button>
   </form>
 </template>
 
